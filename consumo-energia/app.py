@@ -1,18 +1,18 @@
 # Entrada
 nomedoaparelho = input("✏️ Digite o nome do aparelho: ")
 potencia = float(input("🔌 Digite a potência do aparelho, em Watts (W): "))
-tempo = int(input("🕗 Digite o tempo médio de uso diário do aparelho, em Horas (h)"))
-valorkWh = float(input("🪙 Há um Valor fixo no consumo de cada kWh? Se sim, digite-o. Caso não haja, deixe em branco: "))
+tempo = int(input("🕗 Digite o tempo médio de uso diário do aparelho, em Horas (h): "))
+valorkWh = float(input("🪙 Há um Valor fixo no consumo de cada kWh? Se sim, digite-o. Caso não haja, digite 0: "))
 
 # Processamento
-consumomes = (potencia * tempo * 30) / 1000
-if valorkWh != "":
-    consumomes*valorkWh
+consumokWh = (potencia * tempo * 30) / 1000
+if valorkWh == 0:
+    consumovalor = "Sem valor para cálculo."
 else:
-    consumomes
+    consumovalor = consumokWh * valorkWh
 
 #Saída
-if valorkWh != "":
-    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumomes:.2f} kWh por mês")
+if valorkWh == 0:
+    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumokWh:.2f} kWh por mês.")
 else:
-    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumomes:.2f} kWh por mês, e o valor de R${consumomes*valorkWh:.2f} de consumo.")
+    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumokWh:.2f} kWh por mês, e o valor é de aproximadamente R${consumovalor:.2f}.")
