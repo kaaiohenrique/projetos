@@ -15,4 +15,4 @@ else:
 if valorkWh == 0:
     print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumokWh:.2f} kWh por mês.")
 else:
-    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumokWh:.2f} kWh por mês, e o valor é de aproximadamente R${consumovalor:.2f}.")
+    print(f"📊 O aparelho {nomedoaparelho} tem um consumo médio de {consumokWh:.2f} kWh por mês, e o valor é de aproximadamente R$ {consumovalor:.2f}.")
