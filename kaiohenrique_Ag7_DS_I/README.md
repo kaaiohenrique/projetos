@@ -7,4 +7,4 @@
 2. quantidade de água em m³;
 3. o sistema irá calcular automaticamente se o consumo está nos limites corretos!
 
-<img alt="python" height="40" width="40"src="python.png"> Esse programa foi desenvolvido pela linguagem de programação Python.
+<img scr="python.png" width="400" alt="Python"> Esse programa foi desenvolvido pela linguagem de programação Python.
