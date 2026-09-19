@@ -24,4 +24,4 @@ match tipo_imovel:
     case _:
         print("Consumo excessivo – adote medidas de economia e verifique vazamentos.")
         
-print("Agradecemos e lembramos da importãncia do uso consciente de água!")
+print("Agradecemos e lembramos da importância do uso consciente de água!")
