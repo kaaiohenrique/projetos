@@ -6,8 +6,7 @@ print("🚰 Bem-vindo ao sistema de classificação de consumo de água!")
 tipo_imovel = input("🌆 Digite o tipo de imóvel (1 - comercial, 2 - casa, 3 - apartamento): ").strip().lower()
 consumo_agua = float(input("🚿 Digite o consumo de água, em m³: "))
 
-# Processamento
-
+print("\nResultado")
 # Saída
 match tipo_imovel:
     case "1" | "comercial":
@@ -24,4 +23,4 @@ match tipo_imovel:
     case _:
         print("⚠️ Consumo excessivo – adote medidas de economia e verifique vazamentos.")
         
-print("🙂 Agradecemos e lembramos da importância do uso consciente de água!")
+print("\n🙂 Agradecemos e lembramos da importância do uso consciente de água!")
