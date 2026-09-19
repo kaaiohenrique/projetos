@@ -6,7 +6,6 @@ print("🚰 Bem-vindo ao sistema de classificação de consumo de água!")
 tipo_imovel = input("🌆 Digite o tipo de imóvel (1 - comercial, 2 - casa, 3 - apartamento): ").strip().lower()
 consumo_agua = float(input("🚿 Digite o consumo de água, em m³: "))
 
-print("Resultado")
 # Saída
 match tipo_imovel:
     case "1" | "comercial":
