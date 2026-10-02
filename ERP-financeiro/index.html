@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="FINANCEIRO ERP - Sistema integrado de gestão financeira"
+    >
+
+    <meta
+        name="theme-color"
+        content="#581C87"
+    >
+
+    <title>FINANCEIRO ERP</title>
+
+    <!-- =====================================================
+         TAILWIND CSS
+         ===================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: "#faf5ff",
+                            100: "#f3e8ff",
+                            200: "#e9d5ff",
+                            300: "#d8b4fe",
+                            400: "#c084fc",
+                            500: "#a855f7",
+                            600: "#9333ea",
+                            700: "#7c3aed",
+                            800: "#6b21a8",
+                            900: "#581c87",
+                            950: "#3b0764"
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+         ===================================================== -->
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+    <!-- =====================================================
+         ÍCONES
+         ===================================================== -->
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SISTEMA DE LOGIN
+         ===================================================== -->
+
+    <section
+        id="loginScreen"
+        class="login-screen"
+    >
+
+        <div class="login-wrapper">
+
+            <div class="login-card">
+
+                <!-- Marca -->
+                <div class="login-brand">
+
+                    <div class="login-brand-icon">
+                        💰
+                    </div>
+
+                    <h1>
+                        FINANCEIRO ERP
+                    </h1>
+
+                    <p>
+                        Gestão financeira integrada
+                    </p>
+
+                </div>
+
+
+                <!-- Formulário -->
+                <form
+                    id="loginForm"
+                    class="login-form"
+                    autocomplete="on"
+                >
+
+                    <!-- E-mail -->
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            E-mail
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            class="form-control"
+                            placeholder="Digite seu e-mail"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Senha -->
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+                            Senha
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                class="form-control"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleLoginPassword"
+                                aria-label="Mostrar senha"
+                                data-password-toggle="loginPassword"
+                            >
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Mensagem de login -->
+                    <div
+                        id="loginError"
+                        class="form-error hidden"
+                        role="alert"
+                    ></div>
+
+
+                    <!-- Botão -->
+                    <button
+                        type="submit"
+                        id="loginButton"
+                        class="btn btn-primary btn-lg btn-block"
+                    >
+                        <span id="loginButtonIcon">
+                            🔐
+                        </span>
+
+                        <span id="loginButtonText">
+                            Entrar
+                        </span>
+                    </button>
+
+                </form>
+
+
+                <div class="login-footer">
+                    FINANCEIRO ERP
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         APLICAÇÃO
+         ===================================================== -->
+
+    <section
+        id="appScreen"
+        class="app-screen hidden"
+    >
+
+        <div
+            id="appLayout"
+            class="app-layout"
+        >
+
+
+            <!-- =================================================
+                 SIDEBAR
+                 ================================================= -->
+
+            <aside
+                id="sidebar"
+                class="sidebar"
+            >
+
+                <!-- Cabeçalho -->
+                <div class="sidebar-header">
+
+                    <div class="sidebar-brand-icon">
+                        💰
+                    </div>
+
+                    <div class="sidebar-brand-text">
+
+                        <div class="sidebar-brand-title">
+                            FINANCEIRO ERP
+                        </div>
+
+                        <div class="sidebar-brand-subtitle">
+                            Gestão financeira
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Menu -->
+                <nav
+                    id="sidebarMenu"
+                    class="sidebar-menu"
+                    aria-label="Menu principal"
+                >
+
+                    <!--
+                        O JavaScript preencherá
+                        dinamicamente este espaço
+                        de acordo com as permissões
+                        do usuário.
+                    -->
+
+                </nav>
+
+
+                <!-- Usuário -->
+                <div class="sidebar-footer">
+
+                    <div
+                        id="sidebarUser"
+                        class="sidebar-user"
+                    >
+
+                        <div
+                            id="sidebarUserAvatar"
+                            class="sidebar-user-avatar"
+                        >
+                            ?
+                        </div>
+
+                        <div class="sidebar-user-info">
+
+                            <div
+                                id="sidebarUserName"
+                                class="sidebar-user-name"
+                            >
+                                Usuário
+                            </div>
+
+                            <div
+                                id="sidebarUserRole"
+                                class="sidebar-user-role"
+                            >
+                                -
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- =================================================
+                 OVERLAY MOBILE
+                 ================================================= -->
+
+            <div
+                id="mobileOverlay"
+                class="mobile-overlay"
+            ></div>
+
+
+            <!-- =================================================
+                 ÁREA PRINCIPAL
+                 ================================================= -->
+
+            <main class="main-area">
+
+
+                <!-- =============================================
+                     HEADER
+                     ============================================= -->
+
+                <header
+                    id="topHeader"
+                    class="top-header"
+                >
+
+                    <div class="header-left">
+
+                        <!-- Menu -->
+                        <button
+                            type="button"
+                            id="sidebarToggle"
+                            class="sidebar-toggle"
+                            aria-label="Alternar menu"
+                            title="Alternar menu"
+                        >
+                            ☰
+                        </button>
+
+
+                        <!-- Título -->
+                        <div>
+
+                            <div
+                                id="headerTitle"
+                                class="header-title"
+                            >
+                                Início
+                            </div>
+
+                            <div
+                                id="headerSubtitle"
+                                class="header-subtitle"
+                            >
+                                Visão geral do sistema
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="header-right">
+
+
+                        <!-- Status -->
+                        <div
+                            id="syncStatus"
+                            class="sync-status"
+                        >
+
+                            <span class="sync-status-dot"></span>
+
+                            <span>
+                                Conectado
+                            </span>
+
+                        </div>
+
+
+                        <!-- Controle de valores -->
+                        <button
+                            type="button"
+                            id="moneyVisibilityToggle"
+                            class="money-toggle"
+                            title="Mostrar ou ocultar valores"
+                            aria-label="Mostrar ou ocultar valores"
+                        >
+                            👁️
+                        </button>
+
+
+                        <!-- Usuário -->
+                        <div class="header-user">
+
+                            <div
+                                id="headerUserAvatar"
+                                class="header-user-avatar"
+                            >
+                                ?
+                            </div>
+
+                            <div class="header-user-info">
+
+                                <div
+                                    id="headerUserName"
+                                    class="header-user-name"
+                                >
+                                    Usuário
+                                </div>
+
+                                <div
+                                    id="headerUserRole"
+                                    class="header-user-role"
+                                >
+                                    -
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Sair -->
+                        <button
+                            type="button"
+                            id="logoutButton"
+                            class="btn btn-outline btn-sm"
+                            title="Sair"
+                        >
+                            🚪
+                            <span class="hidden md:inline">
+                                Sair
+                            </span>
+                        </button>
+
+                    </div>
+
+                </header>
+
+
+                <!-- =============================================
+                     CONTEÚDO
+                     ============================================= -->
+
+                <div
+                    id="pageContent"
+                    class="page-content"
+                >
+
+                    <!--
+                        O JavaScript renderiza
+                        as páginas neste local.
+                    -->
+
+                    <div
+                        id="pageLoading"
+                        class="page-loading"
+                    >
+
+                        <div class="page-loading-content">
+
+                            <div class="spinner"></div>
+
+                            <div class="page-loading-text">
+                                Carregando sistema...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     RODAPÉ
+                     ============================================= -->
+
+                <footer class="system-footer">
+
+                    FINANCEIRO ERP
+                    <span>•</span>
+                    Sistema de gestão financeira
+
+                </footer>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MODAL PRINCIPAL
+         ===================================================== -->
+
+    <div
+        id="appModal"
+        class="modal-overlay"
+        aria-hidden="true"
+    >
+
+        <div
+            id="modal"
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <!-- Cabeçalho -->
+            <div class="modal-header">
+
+                <div
+                    id="modalTitle"
+                    class="modal-title"
+                >
+                    Confirmação
+                </div>
+
+                <button
+                    type="button"
+                    id="modalClose"
+                    class="modal-close"
+                    aria-label="Fechar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- Corpo -->
+            <div
+                id="modalBody"
+                class="modal-body"
+            >
+
+            </div>
+
+
+            <!-- Rodapé -->
+            <div
+                id="modalFooter"
+                class="modal-footer"
+            >
+
+                <button
+                    type="button"
+                    id="modalCancel"
+                    class="btn btn-outline"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    type="button"
+                    id="modalConfirm"
+                    class="btn btn-primary"
+                >
+                    Confirmar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTAINER DE MENSAGENS
+         ===================================================== -->
+
+    <div
+        id="toastContainer"
+        aria-live="polite"
+        aria-atomic="true"
+    ></div>
+
+
+    <!-- =====================================================
+         MODAL DE CARREGAMENTO
+         ===================================================== -->
+
+    <div
+        id="loadingModal"
+        class="modal-overlay"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal"
+            style="max-width: 320px;"
+        >
+
+            <div
+                class="modal-body"
+                style="
+                    padding: 35px 20px;
+                    text-align: center;
+                "
+            >
+
+                <div
+                    class="spinner"
+                    style="margin: 0 auto 15px;"
+                ></div>
+
+                <div
+                    id="loadingModalText"
+                    style="
+                        font-weight: 600;
+                        color: #475569;
+                    "
+                >
+                    Processando...
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TEMPLATE PARA ESTADO VAZIO
+         ===================================================== -->
+
+    <template id="emptyStateTemplate">
+
+        <div class="empty-state">
+
+            <div class="empty-state-icon">
+                📂
+            </div>
+
+            <div class="empty-state-title">
+                Nenhum registro encontrado
+            </div>
+
+            <div class="empty-state-description">
+                Não existem registros para os filtros selecionados.
+            </div>
+
+        </div>
+
+    </template>
+
+
+    <!-- =====================================================
+         TEMPLATE PARA LOADING
+         ===================================================== -->
+
+    <template id="loadingTemplate">
+
+        <div class="loading-container">
+
+            <div class="loading-inline">
+
+                <div class="spinner spinner-sm"></div>
+
+                <span>
+                    Carregando...
+                </span>
+
+            </div>
+
+        </div>
+
+    </template>
+
+
+    <!-- =====================================================
+         TEMPLATE PARA ACESSO NEGADO
+         ===================================================== -->
+
+    <template id="accessDeniedTemplate">
+
+        <div class="access-denied">
+
+            <div class="access-denied-icon">
+                🔒
+            </div>
+
+            <div class="access-denied-title">
+                Acesso não autorizado
+            </div>
+
+            <div class="access-denied-description">
+                Seu perfil não possui permissão para acessar esta página.
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-primary mt-4"
+                data-action="go-dashboard"
+            >
+                🏠 Voltar para o início
+            </button>
+
+        </div>
+
+    </template>
+
+
+    <!-- =====================================================
+         SCRIPT PRINCIPAL
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="./script.js"
+    ></script>
+
+
+    <!-- =====================================================
+         INICIALIZAÇÃO DOS ÍCONES
+         ===================================================== -->
+
+    <script>
+        window.addEventListener("load", () => {
+
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
