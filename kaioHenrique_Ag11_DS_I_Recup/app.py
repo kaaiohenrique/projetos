@@ -1,17 +1,15 @@
 # Sistema de Controle de níveis de água
-# Autor: Kaio Henrique
+# Autor: Kaio Henrique da Silva
 
 # Importação da biblioteca e funções específicas
 from colorama import Fore, Style
-
-situacao_nivel = print(f“O nível de água do reservatório está em estado {situacao}. Procure sempre manter cheio para prevenir medidas drásticas.”)
 
 # Listas para armazenamento
 niveis_agua = []
 mensagens_situacao = []
 
 # Boas vindas
-print(“Bem-vindo(a) ao Sistema de controle de níveis de água!”)
+print“Bem-vindo(a) ao Sistema de controle de níveis de água!”)
 
 # Entrada
 nivel_real = int(input(“\nDigite qual o nível da água do reservatório atualmente, em m3: ”))
