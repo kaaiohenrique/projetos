@@ -1,7 +1,7 @@
-# 📊 Sistema de verificação de abastecimento do reservatório
+# 🖥️ Página de sites favoritos
 ## 🧑‍💻 Autor: Kaio Henrique da Silva
 <div align="center">
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML"> <br>
     <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status do projeto">
 </div>
 
