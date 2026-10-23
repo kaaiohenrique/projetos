@@ -1,2 +1,19 @@
-# Sistema de Gestão Acadêmica de alunos
-## Desenvolvedor: Kaio Henrique
+# 📊 Sistema de Cálculo de Notas
+## 🧑‍💻 Autor: Kaio Henrique da Silva
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge" alt="License">
+</div>
+
+## 📝 Sobre o Projeto
+O **Sistema de Cálculo de Notas** é umprograma desenvolvido para automatizar o processamento do desempenho escolar. Ele permite o cadastro dinâmico de disciplinas, alunos e notas, gerando um relatório final detalhado com as médias e a situação de aprovação de cada estudante.
+
+## ✨ Funcionalidades
+- 👨‍🎓 **Cadastro Dinâmico:** Inserção customizável da quantidade de alunos e disciplinas.
+- 🧮 **Processamento Automático:** Cálculo imediato da média aritmética por aluno.
+- 🚦 **Avaliação de Situação:** Classificação automática em "Aprovado" ou "Reprovado" com base na nota de corte.
+- 📄 **Geração de Relatórios:** Exibição estruturada do boletim em lote diretamente no console.
+
+### Pré-requisitos para a execução o programa
+- Ter o Python 3.x instalado na sua máquina.
