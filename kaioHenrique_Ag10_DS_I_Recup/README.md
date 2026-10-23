@@ -1,8 +1,8 @@
 # 📊 Sistema de Cálculo de Notas
 ## 🧑‍💻 Autor: Kaio Henrique da Silva
 <div align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="[Baixar Python 3.x](https://www.python.org/downloads/)">
+  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status do projeto">
 </div>
 
 ## 📝 Sobre o Projeto
