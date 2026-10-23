@@ -3,11 +3,10 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge" alt="License">
 </div>
 
 ## 📝 Sobre o Projeto
-O **Sistema de Cálculo de Notas** é umprograma desenvolvido para automatizar o processamento do desempenho escolar. Ele permite o cadastro dinâmico de disciplinas, alunos e notas, gerando um relatório final detalhado com as médias e a situação de aprovação de cada estudante.
+O **Sistema de Cálculo de Notas** é um programa desenvolvido para automatizar o processamento do desempenho escolar. Ele permite o cadastro de disciplinas, alunos e notas, gerando um relatório final detalhado com as médias e a situação de aprovação de cada estudante.
 
 ## ✨ Funcionalidades
 - 👨‍🎓 **Cadastro Dinâmico:** Inserção customizável da quantidade de alunos e disciplinas.
