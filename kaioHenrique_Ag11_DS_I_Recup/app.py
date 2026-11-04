@@ -4,9 +4,8 @@
 # Importação da biblioteca e funções específicas
 from colorama import Fore, Style
 
-# Listas para armazenamento
+# Lista para armazenamento
 niveis_agua = []
-mensagens_situacao = []
 
 # Boas vindas
 print("Bem-vindo(a) ao Sistema de controle de níveis de água!")
