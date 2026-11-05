@@ -11,7 +11,7 @@ O **Portal de entretenimento digital** é um site desenvolvido para apresentar f
 
 ## ✨ Conteúdos
 - 🎮 **Jogos:** Exibição, História e informações de jogos amplamente conhecidos.
-- 🎭 **Filmes:** Exibição e sinópse de filmes nacionais.
+- 🎞️ **Filmes:** Exibição e sinópse de filmes nacionais.
 - 🎵 **Músicas:** Exibição e significado de músicas nacionais.
 
 ### Pré-requisitos para a execução o programa

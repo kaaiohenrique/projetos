@@ -1,3 +1,8 @@
+/* 
+Estilo - CSS do portal de entretenimento digital
+Autor: Kaio Henrique da Silva
+*/
+
 body{
     font-size: 100%;
 }
@@ -22,8 +27,10 @@ h4{
 
 p{
     text-align: left;
-    background-color: #f2f2f2;
+    background-color:lightgray;
     color: black;
+    border-radius: 5px;
+
 }
 
 .fontes{
@@ -47,7 +54,21 @@ p{
     border-radius: 8px;
 }
 
-.imagem{
+.dossie figure{
     margin: 0;
     flex-shrink: 0;
+    width: 180px;
+}
+
+.dossie img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.fontes{
+    text-align: center;
+    font-weight: bold;
+    background-color:white;
+    color:darkblue;
 }
