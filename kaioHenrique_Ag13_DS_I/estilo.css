@@ -1,0 +1,53 @@
+body{
+    font-size: 100%;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    background-color:darkred;
+    color:white;
+}
+
+h3{
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+h4{
+    text-align: left;
+    color:darkred;
+}
+
+p{
+    text-align: left;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.fontes{
+    text-align: center;
+    font-weight: bold;
+    color:darkblue;
+}
+
+.nomes{
+    text-align: left;
+    font-weight: bold;
+    color:black;
+}
+
+.dossie{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.imagem{
+    margin: 0;
+    flex-shrink: 0;
+}
