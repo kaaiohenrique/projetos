@@ -3,24 +3,28 @@ Estilo - CSS do portal de entretenimento digital
 Autor: Kaio Henrique da Silva
 */
 
+/*Estilo dos subtítulos e seções.*/
 h2, h3, h4 {
     text-align: center;
     font-weight: bold;
-    border-radius: 0;    
+    border-radius: 0; /*Com auxílio da IA*/
 }
 
+/*Cor dos títulos das seções*/
 h2 {
     color: white;
     background-color: darkred;
     font-size: 1.5em;
 }
 
+/*Cor dos textos descritivos*/
 h3, p {
     color: black;
     background-color: white;
     font-size: 1em;
 }
 
+/*Cor dos subtítulos*/
 h4 {
     color: darkred;
     background-color: white;
@@ -30,33 +34,53 @@ h4 {
 p {
     text-align: left;
     font-weight: normal;
-    border-radius: 3px;
+    border-radius: 3px; /*Com auxílio da IA*/
+    background-color:darkgray;
 }
 
 .nomes, .fontes, a:link, a:visited {
     font-size: 1em;
     font-weight: bold;
     background-color: white;
-    border-radius: 0;
+    border-radius: 0; /*Com auxílio da IA*/
 }
 
+/*Estilo dos nomes das imagens*/
 .nomes{
     color: black;
 }
 
+/*Cor dos textos de fontes e link não visitados*/
 .fontes, a:link{
     color: darkblue;
 }
 
+/*Cor dos link visitados*/
 a:visited {
     color: darkgreen;
 }
 
 .dossie {
-    width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    height: auto; /*Com auxílio da IA*/
     display: flex;
     flex-direction: row;
     margin: 1%;
     flex-grow: 1;
+    gap: 20px; /*Com auxílio da IA*/
+    margin-bottom: 30px; /*Com auxílio da IA*/
+}
+
+/*Formatação das figuras (Com auxílio da IA)*/
+.dossie figure{ /*Com auxílio da IA*/
+    flex-shrink: 0; /*Com auxílio da IA*/
+    width: 200px;
+}
+
+/*Formatação das imagens dentro das figuras (Com auxílio da IA)*/
+.dossie img { /*Com auxílio da IA*/
+    width: 100%;
+    height: auto;
+    display: block; /*Com auxílio da IA*/
 }
